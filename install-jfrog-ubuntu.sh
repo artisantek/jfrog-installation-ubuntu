@@ -22,7 +22,7 @@ echo "*****Configuring Artifactory as a Service"
 sudo git clone -q https://github.com/artisantek/jfrog-installation-ubuntu.git
 sudo useradd -r -m -U -d /opt/artifactory -s /bin/false artifactory 2>/dev/null
 sudo chown -R artifactory: /opt/artifactory/*
-sudo cp jfrog-installation-ubuntu/tomcat.service /etc/systemd/system/tomcat.service
+sudo cp jfrog-installation-ubuntu/artifactory.service /etc/systemd/system/artifactory.service
 sudo rm -rf jfrog-installation-ubuntu
 sudo systemctl daemon-reload 1>/dev/null
 sudo systemctl start artifactory 1>/dev/null
