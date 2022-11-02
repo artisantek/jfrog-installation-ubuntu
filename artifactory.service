@@ -1,0 +1,24 @@
+[Unit]
+Description=JFROG Artifactory
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+Environment="JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64"
+Environment="CATALINA_PID=/opt/artifactory/artifactory-oss-6.9.6/run/artifactory.pid"
+Environment="CATALINA_HOME=/opt/artifactory/artifactory-oss-6.9.6/tomcat"
+Environment="CATALINA_BASE=/opt/artifactory/artifactory-oss-6.9.6/tomcat"
+Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+Environment="JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom"
+
+ExecStart=/opt/artifactory/artifactory-oss-6.9.6/bin/artifactory.sh start
+ExecStop=/opt/artifactory/artifactory-oss-6.9.6/bin/artifactory.sh stop
+
+User=artifactory
+Group=artifactory
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
