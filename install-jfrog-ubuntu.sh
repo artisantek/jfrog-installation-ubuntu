@@ -1,12 +1,15 @@
 #!/bin/bash
 
-sudo apt-get update -y 1>/dev/null
-sudo apt-get install boxes -y 1>/dev/null
-echo "Artisan Tek\n\n\nJFROG Artifactory Installation" | boxes -d bear -a c
+echo "\n################################################################"
+echo "#                                                              #"
+echo "#                     ***Artisan Tek***                        #"
+echo "#                 Artifactory  Installation                    #"
+echo "#                                                              #"
+echo "################################################################"
 
 # Installing necessary packages
-echo "\n\n################################################################"
-echo "\n*****Installing necessary packages"
+echo "\n\n*****Installing necessary packages"
+sudo apt-get update -y 1>/dev/null
 sudo apt-get install -y default-jre 1>/dev/null
 echo "            -> Done"
 
