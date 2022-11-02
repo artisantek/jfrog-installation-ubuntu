@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update -y 1>/dev/null
-sudo apt-get install boxes 1>/dev/null
+sudo apt-get install boxes -y 1>/dev/null
 echo "Artisan Tek\n\n\nJFROG Artifactory Installation" | boxes -d bear -a c
 
 # Installing necessary packages
