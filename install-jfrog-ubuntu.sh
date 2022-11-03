@@ -9,8 +9,8 @@ echo "################################################################"
 
 # Installing necessary packages
 echo "\n\n*****Installing necessary packages"
-sudo apt-get update -y 1>/dev/null
-sudo apt-get install -y default-jre 1>/dev/null
+sudo apt-get update -y > /dev/null 2>&1
+sudo apt-get install -y default-jre > /dev/null 2>&1
 echo "            -> Done"
 
 # Configuring Artifactory as a Service
