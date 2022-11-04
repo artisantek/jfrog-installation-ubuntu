@@ -2,7 +2,8 @@
 
 
 ## Shell script to pull latest artifact
-```#!/bin/bash
+```
+#!/bin/bash
 
 # Artifactory location
 ip=$1
@@ -24,4 +25,6 @@ wget $url
 ```
 
 ### Sample Usage [https://github.com/artisantek/sonarqube-example]
-```sh latest.sh http://3.109.184.148:8081 maven MyWebApp com/mkyong```
+```
+sh latest.sh http://3.109.184.148:8081 maven MyWebApp com/mkyong
+```
