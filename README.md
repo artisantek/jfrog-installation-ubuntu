@@ -1,9 +1,9 @@
 # jfrog-installation-ubuntu
 
 
-```## Shell script to pull latest artifact
+## Shell script to pull latest artifact
 
-#!/bin/bash
+```#!/bin/bash
 
 # Artifactory location
 ip=$1
