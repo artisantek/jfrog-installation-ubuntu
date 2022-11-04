@@ -1,7 +1,7 @@
 # jfrog-installation-ubuntu
 
 
-'''## Shell script to pull latest artifact
+```## Shell script to pull latest artifact
 
 #!/bin/bash
 
@@ -21,4 +21,4 @@ url=$path/$version/$war
 
 # Download
 echo $url
-wget $url'''
+wget $url```
